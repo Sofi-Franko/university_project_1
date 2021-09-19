@@ -1,0 +1,79 @@
+body {
+    text-align: center;
+    margin: 0 5%;
+    font-family: 'Montserrat', sans-serif;
+}
+a {
+    text-decoration: none;
+}
+a:hover {
+    color: aqua;
+}
+
+.navigation-bar {
+    display: flex;
+    justify-content: space-evenly;
+}
+.navigation-bar a {
+    font-size: 14px;
+}
+
+.margin {
+    margin: 5% 0;
+}
+
+.image {
+    height: 300px;
+    width: 400px;
+}
+
+.bold {
+    font-weight: bold;
+}
+
+
+/*registration page*/
+.form {
+    margin: 0 40%;
+}
+.form-item-wrapper {
+    padding-bottom: 10%;
+    font-size: 16px;
+    display: flex;
+    justify-content: space-between;
+}
+.form-submit-item-wrapper {
+    display: flex;
+    justify-content: center;
+}
+.form-submit-item-wrapper input {
+    font-size: 20px;
+    border: 5px solid aqua;
+    background: antiquewhite;
+}
+
+
+/*schedule page*/
+.schedule-table {
+    margin: 0 auto;
+    border-collapse: collapse;
+    border: 2px solid rgb(200, 200, 200);
+}
+.schedule-table td {
+    text-align: center;
+}
+.schedule-table td, th {
+    border: 1px solid rgb(190, 190, 190);
+    padding: 5px 10px;
+}
+
+
+/*speakers page*/
+.speaker-photo {
+    height: 40%;
+    width: 30%;
+}
+.speaker-photo-desc {
+    font-size: 14px;
+    font-style: italic;
+}
