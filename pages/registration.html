@@ -10,7 +10,7 @@
     <title>Registration</title>
 </head>
 <body>
-<header class="margin">
+<header class="header">
     <h1>Web Design Conference 12-14 грудня - Київ, Україна</h1>
     <nav class="navigation-bar">
         <a href="../index.html" target=»_blank»>Home</a> |
@@ -20,28 +20,29 @@
         <a href="registration.html" target=»_blank»>Registration</a>
     </nav>
 </header>
-
-<section>
-    <h2>Registration</h2>
-    <form class="form">
-        <div class="form-item-wrapper">
-            <label for="name">Name:</label>
-            <input type="text" id="name" name="name">
-        </div>
-        <div class="form-item-wrapper">
-            <label for="surname">Surname:</label>
-            <input type="text" id="surname" name="surname">
-        </div>
-        <div class="form-item-wrapper">
-            <label for="mail">E-mail:</label>
-            <input type="email" id="mail" name="mail">
-        </div>
-        <div class="form-submit-item-wrapper">
-            <input type="submit" id="submit_btn" value="Register me!">
-        </div>
-    </form>
-</section>
-<footer>
+<div class="container">
+    <section class="padding-container">
+        <h2>Registration</h2>
+        <form class="form">
+            <div class="form-item-wrapper">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name">
+            </div>
+            <div class="form-item-wrapper">
+                <label for="surname">Surname:</label>
+                <input type="text" id="surname" name="surname">
+            </div>
+            <div class="form-item-wrapper">
+                <label for="mail">E-mail:</label>
+                <input type="email" id="mail" name="mail">
+            </div>
+            <div class="form-submit-item-wrapper">
+                <input type="submit" id="submit_btn" value="Register">
+            </div>
+        </form>
+    </section>
+</div>
+<footer class="footer">
     <h2>&copy Web Design Conference</h2>
 </footer>
 </body>

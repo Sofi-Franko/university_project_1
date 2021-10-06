@@ -1,13 +1,28 @@
 body {
     text-align: center;
-    margin: 0 5%;
+    margin: 0;
     font-family: 'Montserrat', sans-serif;
+    background: url("images/background_main.jpg") center;
 }
 a {
     text-decoration: none;
 }
-a:hover {
-    color: aqua;
+a:hover, a:focus {
+    color: darkgreen;
+    font-weight: bold;
+}
+h1, h2, h3, h4 {
+    color: brown;
+}
+.container {
+    padding: 0 30px;
+    width: 960px;
+    margin: 0 auto;
+}
+
+.header {
+    background-color: #DEAC9F;
+    padding: 3% 10%;
 }
 
 .navigation-bar {
@@ -15,11 +30,13 @@ a:hover {
     justify-content: space-evenly;
 }
 .navigation-bar a {
-    font-size: 14px;
+    font-size: 16px;
+    text-transform: uppercase;
+    letter-spacing: 3px;
 }
 
-.margin {
-    margin: 5% 0;
+.padding-container {
+    padding: 3% 0;
 }
 
 .image {
@@ -34,7 +51,8 @@ a:hover {
 
 /*registration page*/
 .form {
-    margin: 0 40%;
+    width: 40%;
+    margin: 0 auto;
 }
 .form-item-wrapper {
     padding-bottom: 10%;
@@ -47,14 +65,21 @@ a:hover {
     justify-content: center;
 }
 .form-submit-item-wrapper input {
-    font-size: 20px;
-    border: 5px solid aqua;
-    background: antiquewhite;
+    font-size: 16px;
+    padding: 4% 10%;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    border: 2px solid #D24D57;
+    border-radius: 10px;
+    background: transparent;
+    line-height: 15px;
+    cursor: pointer;
 }
 
 
 /*schedule page*/
 .schedule-table {
+    width: 100%;
     margin: 0 auto;
     border-collapse: collapse;
     border: 2px solid rgb(200, 200, 200);
@@ -77,3 +102,22 @@ a:hover {
     font-size: 14px;
     font-style: italic;
 }
+
+/*task with floating*/
+.aside-with-floating {
+    /*border: 3px solid red;*/
+    float: right;
+    width: 25%;
+}
+.section-with-floating {
+    /*border: 3px solid blue;*/
+    float: left;
+    width: 70%;
+}
+.footer {
+    padding: 3% 10%;
+    background: url("images/background_footer.jpg");
+    clear: both;
+}
+
+/*task with table size*/
