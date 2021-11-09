@@ -1,0 +1,99 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Starbucks Coffee</title>
+</head>
+<body>
+<h1>Your Starbucks Coffee Here</h1>
+<h3>To order the drink fill in the form and press "Order!"</h3>
+<form name="order" id="order" method="post" class="form" onsubmit="return fillOrderResult(this)">
+    <fieldset>
+        <legend>Калькулятор замовлення</legend>
+        <div>
+            <label for="originOfCoffee">Виберіть каву: </label>
+            <select name="originOfCoffee" id="originOfCoffee">
+                <option value="homemadeBlend">Домашня суміш</option>
+                <option value="Guatemala">Гватемала</option>
+                <option value="Kenya">Кенія</option>
+                <option value="Bolivia">Болівія</option>
+            </select>
+        </div>
+        <div>
+            <label class="label-left-position" for="coffeeType">Тип: </label>
+            <div>
+                <input type="radio" name="coffeeType" id="coffeeBeans" value="Кава в зернах" checked>
+                <label for="coffeeBeans">Кава в зернах</label>
+            </div>
+            <div>
+                <input type="radio" name="coffeeType" id="groundCoffee" value="Мелена кава">
+                <label for="groundCoffee">Мелена кава</label>
+            </div>
+        </div>
+        <div>
+            <label class="label-left-position" for="amount">Кількість чашoк:</label>
+            <input type="number" id="amount" name="amount" value="1" min="1" max="10"/>
+        </div>
+        <div>
+            <label class="label-left-position" for="orderTime">Доставити до:</label>
+            <input type="time" name="orderTime" id="orderTime">
+        </div>
+        <hr />
+        <div>
+            <label>Додаткові послуги:</label>
+            <div>
+                <input class="label-left-position" type="checkbox" name="giftWrapping" id="giftWrapping">
+                <label for="giftWrapping">Подарункова упаковка</label>
+            </div>
+            <div>
+                <input class="label-left-position" type="checkbox" name="productCatalog" id="productCatalog">
+                <label for="productCatalog">Каталог продукції</label>
+            </div>
+        </div>
+    </fieldset>
+    <fieldset>
+        <legend>Delivery</legend>
+        <div class="form-item-wrapper">
+            <input type="text" name="firstname" id="firstname" placeholder="Ім'я" required>
+            <input type="text" name="lastname" id="lastname" placeholder="Призвіще" required>
+        </div>
+        <div class="form-item-wrapper">
+            <input type="tel" name="number" id="number" placeholder="Phone number" pattern="\d{5,14}" required>
+        </div>
+        <div class="form-item-wrapper">
+            <input type="text" name="address" id="address" placeholder="Адреса" required>
+        </div>
+        <div class="form-item-wrapper">
+            <input type="email" name="email" id="email" placeholder="Email">
+        </div>
+        <div class="form-item-wrapper">
+            <textarea name="comment" id="comment" placeholder="Кометнар до замовлення" rows="3" cols="35"></textarea>
+        </div>
+        <div class="form-submit-item-wrapper">
+            <input type="submit" value="Order!">
+        </div>
+    </fieldset>
+</form>
+<div class="table-orders">
+    <table>
+        <thead>
+        <tr>
+            <th>Name Surname</th>
+            <th>Address</th>
+            <th>Phone number</th>
+            <th>Coffee type</th>
+            <th>Amount</th>
+        </tr>
+        </thead>
+        <tbody name="orders" id="orders"></tbody>
+    </table>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
